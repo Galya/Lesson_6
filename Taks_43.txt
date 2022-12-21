@@ -1,0 +1,35 @@
+//Задача 43
+
+Console.WriteLine("число b1");
+double b1 = double.Parse(Console.ReadLine()!);
+Console.WriteLine("число k1");
+double k1 = double.Parse(Console.ReadLine()!);
+Console.WriteLine("число b2");
+double b2 = double.Parse(Console.ReadLine()!);
+Console.WriteLine("число k2");
+double k2 = double.Parse(Console.ReadLine()!);
+
+double FindX = FuncX(b1, k1, b2, k2);
+double FindY1 = FuncY1(findX, k1, b1);
+double FindY2 = FuncY2(findX, k2, b2);
+if (FindY1 == findY2) Console.WriteLine ($"({findX}; {findY1})");
+else Console.WriteLine ("не пересекаются");
+
+
+double FuncX (double c1, double a1, double c2, double a1, )
+{
+    double x = (c2 - c1) / (a1 - a2);
+    return x;
+}
+
+double FuncY (double cx,  double c1, double a1, );
+{
+    double y1 = a1*x+c1;
+    return y1;
+}
+
+double FuncY (double cx,  double c2, double a2, );
+{
+    double y2 = a2*x+c2;
+    return y2;
+}
